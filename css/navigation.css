@@ -1,0 +1,20 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav span {
+    align-self: flex-start;
+}
+
+nav a {
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+nav a:not(:last-child) {
+    padding-right: 15px;
+    box-sizing: border-box;
+    border-right: 1px solid black;
+
+}
