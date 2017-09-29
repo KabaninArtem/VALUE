@@ -1,10 +1,18 @@
-@import url(../css/navigation.css);
+@import url(../fonts/font-awesome-4.7.0/css/font-awesome.css);
 @import url(../css/header.css);
-@import url(../css/logo-block.css);
-@import url(../css/user-block.css);
+
+
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/Lato/Lato-Black.ttf");
+    src: url("../fonts/Lato/Lato-Bold.ttf");
+    src: url("../fonts/Lato/Lato-Italic.ttf");
+    src: url("../fonts/Lato/Lato-Light.ttf");
+    src: url("../fonts/Lato/Lato-Regular.ttf");
+}
 
 * {
-    font-family: 'Lato', Helvetica, sans-serif;
+    font-family: 'Lato', Arial, sans-serif;
 }
 
 a {
@@ -12,25 +20,56 @@ a {
     text-decoration: none;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav span {
+    align-self: flex-start;
+}
+
+nav a {
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+nav a:not(:last-child) {
+    padding-right: 15px;
+    box-sizing: border-box;
+    border-right: 1px solid black;
+}
+
 input[type=search] {
     align-self: flex-end;
     outline: none;
-    width: 260px;
+    width: 230px;
     height: 30px;
     padding: 0 15px;
     font-size: 12px;
     font-style: italic;
     text-transform: capitalize;
     color: #757f3c;
-    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
     border: none;
     background-color: rgb(243, 239, 228);
-    box-shadow: inset 0px 1px 1px 0px rgba(196, 176, 122, 0.47);
-    background-image: url("../img/search_icon.png");
-    background-position: 227px center;
-    background-repeat: no-repeat;
+    box-shadow: inset 0px 1px 0 0px rgba(196, 176, 122, 0.47);
 }
 
 input[type=search]::placeholder {
     color: #757f3c;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    color: #757f3c;
+    cursor: pointer;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: none;
+    background-color: rgb(243, 239, 228);
+    box-shadow: inset 0px 1px 0 0px rgba(196, 176, 122, 0.47);
+    outline: none;
 }
