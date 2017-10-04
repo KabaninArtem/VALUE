@@ -7,7 +7,7 @@ header {
     box-sizing: border-box;
     border-bottom: 1px solid #e4ded1;
 }
-.header-inner {
+header .header-inner {
     position: relative;
     display: flex;
     justify-content: space-between;
