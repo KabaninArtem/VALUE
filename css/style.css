@@ -20,22 +20,14 @@ a {
     text-decoration: none;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-nav span {
-    align-self: flex-start;
-}
-
 nav a {
     text-transform: capitalize;
     font-size: 16px;
 }
 
 nav a:not(:last-child) {
-    padding-right: 15px;
+    margin-right: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
     border-right: 1px solid black;
 }
@@ -62,7 +54,6 @@ input[type=search]::placeholder {
 }
 
 button {
-    width: 30px;
     height: 30px;
     color: #757f3c;
     cursor: pointer;
