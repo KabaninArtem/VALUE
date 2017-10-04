@@ -56,4 +56,5 @@ header .header-inner .user-block a {
 
 header .header-inner .user-block .search-block {
     display: flex;
+    width: 260px;
 }

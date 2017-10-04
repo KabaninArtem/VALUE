@@ -4,7 +4,7 @@ main {
     align-items: flex-start;
 
     padding-top: 50px;
-    height: 2000px;
+    height: 1400px;
     background-color: #f3efe4;
 }
 
@@ -12,9 +12,13 @@ main .main-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1500px;
+    height: 1350px;
 
     width: 90%;
+    padding: 35px;
+    box-sizing: border-box;
+    border: 1px solid #e4ded1;
+    border-radius: 5px;
     background: white;
 }
 
@@ -24,10 +28,8 @@ main .main-inner .banner-block {
     justify-content: flex-end;
     align-items: flex-start;
 
-    max-width: 95%;
     width: 100%;
     height: 600px;
-    margin-top: 2.5%;
 
     background: url("../img/banner-image.jpg") top center no-repeat;
     background-size: cover;
@@ -68,10 +70,57 @@ main .main-inner .content-block {
     flex-direction: row;
     justify-content: space-between;
 
-    max-width: 95%;
     width: 100%;
     height: 800px;
     margin-top: 40px;
+}
+
+main .main-inner .content-block aside {
+    display: flex;
+    flex-direction: column;
+
+    width: 25%;
+}
+
+main .main-inner .content-block aside nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 30px 0;
+}
+
+main .main-inner .content-block aside nav a:hover {
+    color: #d98d1b;
+    text-decoration: underline;
+}
+
+main .main-inner .content-block aside nav:nth-child(6) a:last-child i {
+    color: #d98d1b;
+}
+
+main .main-inner .content-block aside nav a {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.8;
+    border: none;
+}
+
+main .main-inner .content-block aside nav a i {
+    margin-right: 10px;
+}
+
+main .main-inner .content-block aside .email-block {
+    display: flex;
+
+    margin-top: 30px;
+    width: 130px;
+}
+
+main .main-inner .content-block aside .email-block button i {
+    font-size: 20px;
 }
 
 main .main-inner .content-block .post-block {
@@ -83,18 +132,9 @@ main .main-inner .content-block .post-block {
     height: 100%;
 }
 
-
-main .main-inner .content-block .post-block h2 {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-    color: #a3a78b;
-}
-
 main .main-inner .content-block .post-block .post-block__item {
-    height: 200px;
-    margin-top: 50px;
+    height: 190px;
+    margin-top: 30px;
 }
 
 main .main-inner .content-block .post-block .post-block__item:not(:last-child) {
@@ -114,8 +154,10 @@ main .main-inner .content-block .post-block .post-block__item .item-inner .infor
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     width: 70%;
     height: 100%;
+    margin-left: 20px;
 }
 
 main .main-inner .content-block .post-block .post-block__item .item-inner .information-block h3 {
@@ -152,7 +194,6 @@ main .main-inner .content-block .post-block .post-block__item .item-inner .infor
     color: #5b5b5b;
     margin: 0;
     line-height: 1.5;
-    width: 85%;
 }
 
 main .main-inner .content-block .post-block .post-block__item .item-inner .information-block p a {
