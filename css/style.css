@@ -14,12 +14,22 @@
 
 * {
     font-family: 'Lato', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-inner,
+.main-inner,
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+
+    width: 90%;
+    margin: 0 auto;
+
 }
 
 h2 {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 14px;
     font-weight: bold;
     color: #a3a78b;
 }
@@ -27,18 +37,6 @@ h2 {
 a {
     color: black;
     text-decoration: none;
-}
-
-nav a {
-    text-transform: capitalize;
-    font-size: 16px;
-}
-
-nav a:not(:last-child) {
-    margin-right: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    border-right: 1px solid black;
 }
 
 input[type=search],
@@ -76,4 +74,42 @@ button {
     background-color: rgb(243, 239, 228);
     box-shadow: inset 0px 1px 0 0px rgba(196, 176, 122, 0.47);
     outline: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.search-block {
+    display: flex;
+    width: 260px;
+}
+
+.nav-items {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: flex-start;
+
+    width: 100%
+
+}
+
+.nav-items a {
+    font-size: 14px;
+    color: black;
+    line-height: 1.8;
+    text-transform: capitalize;
+}
+
+.nav-items a i {
+    margin-right: 10px;
+}
+
+
+.title {
+    margin: 20px 0;
+    font-size: 14px;
+    text-transform: uppercase;
 }
