@@ -3,7 +3,7 @@ header {
     height: 92px;
     margin: auto;
     padding-top: 16px;
-    padding-left: 140px;
+    padding-left: 150px;
     box-sizing: border-box;
     border-bottom: 1px solid #e4ded1;
 }
@@ -55,4 +55,50 @@ header .header-inner nav:nth-child(3) .nav-items a {
 
 header .header-inner .search-block {
     align-self: flex-end;
+}
+
+@media (max-width: 1024px) {
+    header {
+        height: 250px;
+        padding-left: 0;
+    }
+
+    header .logo {
+        top: 45px;
+        left: 50%;
+        margin-left: -63px;
+    }
+
+    header .header-inner {
+        height: 220px;
+
+        align-items: center;
+    }
+
+    header .header-inner span {
+        order: 3;
+    }
+
+    header .header-inner nav:nth-child(2) {
+        order: 4;
+
+        margin: 0;
+    }
+
+    header .header-inner nav:nth-child(3) .nav-items a {
+        font-size: 16px;
+    }
+
+    header .header-inner .search-block {
+        order: 2;
+        align-self: center;
+
+        width: 360px;
+        margin-top: 85px;
+    }
+
+    header .header-inner .search-block input[type=search] {
+        width: 330px;
+    }
+
 }
