@@ -1,62 +1,58 @@
 header {
+    position: relative;
     height: 92px;
     margin: auto;
     padding-top: 16px;
+    padding-left: 140px;
     box-sizing: border-box;
     border-bottom: 1px solid #e4ded1;
 }
-header .header-inner {
-    position: relative;
 
+header .header-inner {
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
     height: 60px;
 }
 
-header .header-inner .logo {
+header .logo {
     position: absolute;
-    top: -5px;
-    left: 0;
+    top: 12px;
+    left: 5%;
 }
 
-header .header-inner .header-menu {
-    justify-content: space-between;
-
-    max-width: 60%;
-    width: 100%;
-    margin-left: 140px;
-}
-
-header .header-inner .header-menu span {
+header .header-inner span {
     font-size: 13px;
     color: #c4b07a;
 }
 
-header .header-inner .nav-items a {
+header .header-inner nav:nth-child(2) {
+    margin-top: 15px;
+}
+
+header .header-inner nav .nav-items a {
     font-size: 16px;
     line-height: normal;
 }
 
-header .header-inner .header-menu .nav-items,
-header .header-inner .user-block .nav-items {
+header .header-inner nav .nav-items {
     flex-direction: row;
     width: auto;
 }
 
-header .header-inner .header-menu .nav-items a:not(:last-child),
-header .header-inner .user-block .nav-items a:not(:last-child){
+header .header-inner nav .nav-items a:not(:last-child) {
     margin-right: 20px;
     padding-right: 20px;
     box-sizing: border-box;
     border-right: 1px solid black;
 }
 
-header .header-inner .user-block {
-    justify-content: space-between;
-    align-items: flex-end;
 
-    max-width: 40%;
-    width: 100%;
+header .header-inner nav:nth-child(3) .nav-items a {
+    font-size: 13px;
 }
 
-header .header-inner .user-block .nav-items a {
-    font-size: 13px;
+header .header-inner .search-block {
+    align-self: flex-end;
 }
