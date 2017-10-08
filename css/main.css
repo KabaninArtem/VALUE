@@ -178,3 +178,27 @@ main .main-inner .content-block .post-block .post-block__item .item-inner .infor
 main .main-inner .content-block .post-block .post-block__item .item-inner .information-block p a {
     color: #d98d1b;
 }
+
+
+@media (max-width: 1024px) {
+    main .main-inner .content-block {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    main .main-inner .content-block aside {
+        flex-direction: row;
+        justify-content: space-around;
+
+        width: 100%;
+    }
+
+    main .main-inner .content-block aside nav:not(:first-child) {
+        margin-top: 0;
+    }
+
+    main .main-inner .content-block .post-block {
+        max-width: 100%;
+    }
+
+}

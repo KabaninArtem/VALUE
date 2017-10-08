@@ -48,7 +48,6 @@ header .header-inner nav .nav-items a:not(:last-child) {
     border-right: 1px solid black;
 }
 
-
 header .header-inner nav:nth-child(3) .nav-items a {
     font-size: 13px;
 }
@@ -93,7 +92,8 @@ header .header-inner .search-block {
         order: 2;
         align-self: center;
 
-        width: 360px;
+        max-width: 360px;
+        width: 100%;
         margin-top: 85px;
     }
 

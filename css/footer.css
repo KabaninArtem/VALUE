@@ -45,3 +45,21 @@ footer .footer-inner nav .search-block {
     display: flex;
     width: 260px;
 }
+
+@media (max-width: 1024px) {
+
+    footer .footer-inner {
+        flex-wrap: wrap;
+    }
+
+    footer .footer-inner nav:nth-child(2) {
+        order: 1;
+        margin: auto;
+    }
+
+    footer .footer-inner nav .title,
+    footer .footer-inner nav .nav-items a,
+    footer .footer-inner nav .search-block {
+        align-self: center;
+    }
+}

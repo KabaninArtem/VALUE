@@ -84,7 +84,8 @@ nav {
 
 .search-block {
     display: flex;
-    width: 260px;
+    max-width: 260px;
+    width: 100%;
 }
 
 .nav-items {
