@@ -1,20 +1,15 @@
 header {
     position: relative;
+
     height: 92px;
     margin: auto;
     padding-top: 16px;
     padding-left: 150px;
+
     box-sizing: border-box;
     border-bottom: 1px solid #e4ded1;
 }
 
-header .header-inner {
-
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    height: 60px;
-}
 
 header .logo {
     position: absolute;
@@ -22,37 +17,47 @@ header .logo {
     left: 5%;
 }
 
-header .header-inner span {
+header .inner {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    height: 60px;
+}
+
+header .inner span {
     font-size: 13px;
     color: #c4b07a;
 }
 
-header .header-inner nav:nth-child(2) {
+header .inner nav:nth-child(2) {
     margin-top: 15px;
 }
 
-header .header-inner nav .nav-items a {
+header .inner nav .nav-items a {
     font-size: 16px;
     line-height: normal;
 }
 
-header .header-inner nav .nav-items {
+header .inner nav .nav-items {
     flex-direction: row;
+
     width: auto;
 }
 
-header .header-inner nav .nav-items a:not(:last-child) {
+header .inner nav .nav-items a:not(:last-child) {
     margin-right: 20px;
     padding-right: 20px;
+
     box-sizing: border-box;
     border-right: 1px solid black;
 }
 
-header .header-inner nav:nth-child(3) .nav-items a {
+header .inner nav:nth-child(3) .nav-items a {
     font-size: 13px;
 }
 
-header .header-inner .search-block {
+header .inner .search-block {
     align-self: flex-end;
 }
 
@@ -65,30 +70,31 @@ header .header-inner .search-block {
     header .logo {
         top: 45px;
         left: 50%;
+
         margin-left: -63px;
     }
 
-    header .header-inner {
-        height: 220px;
-
+    header .inner {
         align-items: center;
+
+        height: 220px;
     }
 
-    header .header-inner span {
+    header .inner span {
         order: 3;
     }
 
-    header .header-inner nav:nth-child(2) {
+    header .inner nav:nth-child(2) {
         order: 4;
 
         margin: 0;
     }
 
-    header .header-inner nav:nth-child(3) .nav-items a {
+    header .inner nav:nth-child(3) .nav-items a {
         font-size: 16px;
     }
 
-    header .header-inner .search-block {
+    header .inner .search-block {
         order: 2;
         align-self: center;
 
@@ -97,8 +103,21 @@ header .header-inner .search-block {
         margin-top: 85px;
     }
 
-    header .header-inner .search-block input[type=search] {
+    header .inner .search-block input[type=search] {
         width: 330px;
     }
+}
 
+@media (max-width: 767px) {
+
+    header .inner nav .nav-items a,
+    header .inner nav:nth-child(3) .nav-items a{
+        font-size: 14px;
+    }
+
+    header .inner nav .nav-items a:not(:last-child) {
+        margin-right: 12px;
+        padding: 0;
+        border: none;
+    }
 }
