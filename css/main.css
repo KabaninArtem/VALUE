@@ -218,6 +218,7 @@ main .inner .content-block .post-block .post-block__item .item-inner .informatio
 @media (max-width: 767px) {
 
     main .inner {
+        width: 100%;
         padding: 15px;
     }
 
