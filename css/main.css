@@ -150,7 +150,7 @@ main .inner .content-block .post-block .post-block__item .item-inner .informatio
     margin-left: 20px;
 }
 
-main .inner .content-block .post-block .post-block__item .item-inner .information-block h3 {
+main .inner .content-block .post-block .post-block__item .item-inner .information-block h2 {
     position: relative;
 
     display: flex;
@@ -166,7 +166,7 @@ main .inner .content-block .post-block .post-block__item .item-inner .informatio
     text-align: center;
 }
 
-main .inner .content-block .post-block .post-block__item .item-inner .information-block h3 span {
+main .inner .content-block .post-block .post-block__item .item-inner .information-block h2 span {
     position: absolute;
     top: 7px;
     right: 8px;
@@ -283,11 +283,11 @@ main .inner .content-block .post-block .post-block__item .item-inner .informatio
         margin-left: 0;
     }
 
-    main .inner .content-block .post-block .post-block__item .item-inner .information-block h3 {
+    main .inner .content-block .post-block .post-block__item .item-inner .information-block h2 {
         font-size: 19px;
     }
 
-    main .inner .content-block .post-block .post-block__item .item-inner .information-block h3 span {
+    main .inner .content-block .post-block .post-block__item .item-inner .information-block h2 span {
         top: 3px;
         right: 6px;
     }

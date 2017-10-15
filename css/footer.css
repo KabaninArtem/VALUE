@@ -37,7 +37,13 @@ footer .inner nav .line-border {
     border-bottom: 1px solid #889446;
 }
 
-footer .inner nav .nav-items a {
+footer .inner nav .wrapper {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: flex-start;
+}
+
+footer .inner nav a {
     color: white;
 }
 
@@ -63,7 +69,7 @@ footer .inner nav .search-block {
     }
 
     footer .inner nav .title,
-    footer .inner nav .nav-items a,
+    footer .inner nav a,
     footer .inner nav .search-block {
         align-self: center;
     }

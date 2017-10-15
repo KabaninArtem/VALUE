@@ -27,11 +27,6 @@
 
 }
 
-h2 {
-    font-weight: bold;
-    color: #a3a78b;
-}
-
 a {
     color: black;
     text-decoration: none;
@@ -80,34 +75,27 @@ nav {
     align-items: flex-start;
 }
 
-.search-block {
-    display: flex;
-    max-width: 260px;
-    width: 100%;
-}
-
-.nav-items {
-    display: flex;
-    flex-flow: wrap column;
-    align-items: flex-start;
-
-    width: 100%
-
-}
-
-.nav-items a {
+nav a {
     font-size: 14px;
     color: black;
     line-height: 1.8;
     text-transform: capitalize;
 }
 
-.nav-items a i {
+nav a i {
     margin-right: 10px;
+}
+
+.search-block {
+    display: flex;
+    max-width: 260px;
+    width: 100%;
 }
 
 .title {
     margin: 20px 0;
     font-size: 14px;
+    font-weight: bold;
+    color: #a3a78b;
     text-transform: uppercase;
 }
